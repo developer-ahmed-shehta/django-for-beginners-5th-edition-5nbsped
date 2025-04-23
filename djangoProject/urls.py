@@ -22,5 +22,10 @@ urlpatterns = [
     path('', include("sampleApp.urls")),
     path('company/',include("CompanyWebsite.urls")),
     path('MessageBoard',include("MessageBoardWebsite.urls")),
-    path('Blog/',include("Blog.urls"))
+    path('Blog/',include("Blog.urls")),
+
+    path("accounts/", include("django.contrib.auth.urls")),
+
+    path("accounts/", include("accounts.urls")), # new
+
 ]
